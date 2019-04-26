@@ -10,7 +10,11 @@
     >
       <div class="logo">
         <nuxt-link to="/">
-          <img class="logo-img" :src="$store.state.meta.logo" alt="logo" />
+          <img
+            class="logo-img"
+            :src="$store.state.meta.projectImg"
+            alt="logo"
+          />
           <h1 class="logo-text">{{ $store.state.meta.appName }}</h1>
         </nuxt-link>
       </div>
@@ -97,8 +101,8 @@ export default {
     overflow: hidden;
 
     .logo-img {
-      // width: 32px;
-      // height: 32px;
+      width: 32px;
+      height: 32px;
       vertical-align: middle;
     }
 

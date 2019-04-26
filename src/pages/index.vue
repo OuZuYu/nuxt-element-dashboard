@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <img class="home-img" :src="$store.state.meta.homePageImg" alt="homeImg" />
+    <img class="home-img" :src="$store.state.meta.projectImg" alt="homeImg" />
   </div>
 </template>
 
@@ -15,7 +15,8 @@ export default {
 <style lang="less">
 .index {
   .home-img {
-    width: 100%;
+    width: 200px;
+    height: 200px;
   }
 }
 </style>

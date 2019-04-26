@@ -9,7 +9,11 @@ export const state = () => ({
   userId: '',
   token: '',
   tenantId: '',
-  meta: {},
+  meta: {
+    projectImg:
+      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556277865934&di=7dcf32d13fe40c444499681f264060da&imgtype=0&src=http%3A%2F%2Fs14.sinaimg.cn%2Fmw690%2F002kiosLgy6JZm4AQBT1d%26690',
+    appName: '欧祖宇前端开发应聘'
+  },
 
   user: {},
   menuList: [],
@@ -78,11 +82,11 @@ export const actions = {
   },
   // 配置的元信息
   async fetchMetaInfo({commit}) {
-    let resp = await this.$axios.$get('/deepexi-permission/api/v1/configs')
-    let meta = {}
-    resp.payload.forEach(item => {
-      meta[item.key] = item.value
-    })
-    commit('update', {meta})
+    // let resp = await this.$axios.$get('/deepexi-permission/api/v1/configs')
+    // let meta = {}
+    // resp.payload.forEach(item => {
+    //   meta[item.key] = item.value
+    // })
+    // commit('update', {meta})
   }
 }

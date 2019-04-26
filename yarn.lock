@@ -2908,7 +2908,8 @@ ejs@^2.6.1:
 
 el-data-table@^1.1.1:
   version "1.1.1"
-  resolved "https://registry.npmjs.org/el-data-table/-/el-data-table-1.1.1.tgz#59535f67c0eef0f7071aa1e69b1453d0c30b80ab"
+  resolved "https://registry.yarnpkg.com/el-data-table/-/el-data-table-1.1.1.tgz#59535f67c0eef0f7071aa1e69b1453d0c30b80ab"
+  integrity sha512-ZY7Lc40u/226INELuZvD2ukivDi8E3b4fdlPgWKAuH6xOhAEdZ735vpI2spfGALq4EX9uoI63WMVGZxlBO5NlQ==
   dependencies:
     lodash.get "^4.4.2"
     qs "^6.5.2"

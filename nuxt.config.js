@@ -2,8 +2,10 @@ require('dotenv').config()
 
 const env = process.env
 const isProd = env.MODE == 'prod'
-const mockServer =
-  'https://easy-mock.com/mock/5c1b3895fe5907404e654045/femessage-mock'
+// const mockServer =
+// 'https://easy-mock.com/mock/5c1b3895fe5907404e654045/femessage-mock'
+// const mockServer = 'http://yapi.demo.qunar.com/mock/64673/yapi'
+const mockServer = 'https://easy-mock.com/mock/5b7a7ca2bf95d870586e7a1e/api'
 
 // 不能以斜杠结尾
 let apiServer = process.env.API_SERVER
@@ -14,8 +16,8 @@ const config = {
   aliIconFont: '',
   env: {
     mock: {
-      '/deepexi-tenant': mockServer,
-      '/deepexi-permission': mockServer
+      '/api': mockServer,
+      '/api': mockServer
     },
     dev: {
       '/deepexi-tenant': apiServer,
