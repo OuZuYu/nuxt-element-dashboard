@@ -11,3 +11,6 @@ yarn
 yarn mock:nologin
 
 ```
+
+## 预览
+![img](https://raw.githubusercontent.com/OuZuYu/images/master/images/deepexi-img.png)
