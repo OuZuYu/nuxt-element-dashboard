@@ -110,7 +110,7 @@ export default {
             text: '下架',
             show: row => row.status === 1,
             atClick: row => {
-              return this.$axios.put('/api/component/status', {status: 0})
+              return this.$axios.put('/api/components', {status: 0})
             }
           },
           {
@@ -118,7 +118,7 @@ export default {
             text: '上架',
             show: row => row.status === 0,
             atClick: row => {
-              return this.$axios.put('/api/component/status', {status: 1})
+              return this.$axios.put('/api/components', {status: 1})
             }
           }
         ],
